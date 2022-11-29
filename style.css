@@ -18,6 +18,7 @@ p {
     font-weight: 300;
     font-size: 62.5%;
     letter-spacing: 0.2px;
+    line-height: 20px;
 }
 
 li {
@@ -56,6 +57,7 @@ nav li {
 
 h1 {
     font-weight: 400;
+    font-size: 2.5rem;
     text-align: right;
 }
 
@@ -76,6 +78,7 @@ h1 {
 
 h2 {
     font-weight: 400;
+    font-size: 2rem;
     margin-bottom: 0px;
 }
 
@@ -101,6 +104,7 @@ button {
     background-color: #1d0303;
     color: white;
     font-family: 'Petit Formal Script';
+    font-size: 25px;
     display: inline-block;
     width: 160px;
     height: 30px;
@@ -154,7 +158,6 @@ button {
     width: 100%;
 }
 
-
 .fall-trends,
 .vegan-leather {
     margin: auto;
@@ -172,7 +175,6 @@ footer {
         display: none;
     }
 }
-
 
 @media (max-width: 480px) {
 
@@ -194,7 +196,7 @@ footer {
     }
 
     .section-one {
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
 
     .hand-crafted {
@@ -212,12 +214,13 @@ footer {
     }
 
     p {
-        line-height: 20px;
+        font-size: 83.3%;
+        line-height: 27px;
         letter-spacing: 0.2px;
     }
 
     button {
-        margin: 0 auto;
+        margin: 10px auto 15px;
     }
 
     .gallery ul {
@@ -255,7 +258,10 @@ footer {
 
     .fall-trends,
     .vegan-leather {
-        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
     }
 
 
