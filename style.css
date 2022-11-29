@@ -17,6 +17,7 @@ p {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 62.5%;
+    letter-spacing: 0.2px;
 }
 
 li {
@@ -75,6 +76,7 @@ h1 {
 
 h2 {
     font-weight: 400;
+    margin-bottom: 0px;
 }
 
 .hand-crafted {
@@ -152,10 +154,11 @@ button {
     width: 100%;
 }
 
+
 .fall-trends,
 .vegan-leather {
-   margin: auto;
-   padding: 0 80px;
+    margin: auto;
+    padding: 0 80px;
 }
 
 footer {
@@ -164,44 +167,95 @@ footer {
     padding: 5px;
 }
 
+@media (min-width: 481px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+
+
 @media (max-width: 480px) {
-    header .wrapper {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .head-one {
         width: 100%;
         flex-direction: column;
+    }
+
+    .social i {
+        display: none;
+    }
+
+    .section-one {
+        padding: 20px 40px;
     }
 
     .hand-crafted {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hand-crafted img {
+        width: 40vh;
+        height: 30vh;
+    }
+
+    .section-one h2 {
         text-align: center;
     }
 
-    /* button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
+    p {
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
 
-    img {
-         max-width: 100%;
-        height: auto;
-        }
+    button {
+        margin: 0 auto;
+    }
 
-    .gallery ul{
-        flex-direction: column;
+    .gallery ul {
+        flex-direction: row-reverse;
     }
 
     .gallery li {
         margin-bottom: 20px;
     }
 
+    .brown-bag {
+        display: none;
+    }
+
     .icons  {
         flex-direction: column;
     }
 
+    .icons li {
+        font-size: 30px;
+    }
+
+    .square div {
+        width: 100%;
+    }
+    
+    .hide-mobile {
+        display: none;
+    }
+
+    .square img {
+        width: 100vw;
+        height: 30vh;
+    }
+
     .fall-trends,
     .vegan-leather {
-        flex-direction: column;
+        padding: 30px 20px;
     }
 
 
